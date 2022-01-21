@@ -5,15 +5,22 @@ import Axios from 'axios';
 
 function App() {
 
+  // let ws = new WebSocket('wss://stream.binance.com:9443/ws/btc@trade')
+
   const[ListOfCoins, setListOfCoins] = useState([])
   const[SearchWord, setSearchWord] = useState('')
 
   useEffect(()=>{
     Axios.get("https://api.coinstats.app/public/v1/coins?skip=0")
     .then((response)=>{
-      console.log(response.data);
+      // console.log(response.data);
       setListOfCoins(response.data.coins)
     })
+
+    // ws.onmessage =(ev)=>{
+    //   const msg = JSON.parse(ev.data)
+    //   console.log(msg);
+    // }
   },[])
 
   const filteredCoins = ListOfCoins.filter((coin)=>{
