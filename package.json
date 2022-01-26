@@ -1,6 +1,6 @@
 {
-  "name": "crypto-price",
   "homepage": "https://Debopriya1379.github.io/crypto-dashboard-react/",
+  "name": "crypto-price",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
