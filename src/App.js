@@ -50,8 +50,11 @@ function App() {
       </main>
       <footer>
         <p>Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It's a peer-to-peer system that can enable anyone anywhere to send and receive payments. Cryptocurrency is stored in digital wallets. Cryptocurrency received its name because it uses encryption to verify transactions.</p>
-        <p>Copyright © 2022 debopriyadas721@gmail.com</p>
+        <p>p.s. the data showing in this website are not really real-time. The data is coming from a third party public api</p>
         <a href="https://documenter.getpostman.com/view/5734027/RzZ6Hzr3#8c32f517-5bb6-4f3a-b36d-ea2a754082ee" target="_blank" rel="noreferrer">API link</a>
+        <p>Made with love and React JS</p>
+        <a href="https://www.linkedin.com/in/debopriya-das-5b978b202/">developer contact</a>
+        <p>© Copyright D.code 2022</p>
       </footer>
     </div>
   );
