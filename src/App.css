@@ -47,14 +47,40 @@ main{
   background-color: black;
   color: whitesmoke;
   border-radius: 5px;
+  transition: .6s;
 }
 
-.Coin > h2,h3,img{
+.Coin > h2,h3,p{
   margin: 4px 0px;
 }
 
-.Coin > img{
+.coin_image {
   width: 3rem;
+  margin: 4px 0px;
+  cursor: pointer;
+}
+
+/* .Coin > img{
+  width: 3rem;
+} */
+
+.Coin:hover {
+  transform: scale(1.2);
+  border: 1px solid red;
+}
+
+.priceupdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
 }
 
 footer{

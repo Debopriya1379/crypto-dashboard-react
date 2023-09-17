@@ -13,7 +13,7 @@ function App() {
   useEffect(()=>{
     Axios.get("https://api.coinstats.app/public/v1/coins?skip=0")
     .then((response)=>{
-      // console.log(response.data);
+      console.log(response.data);
       setListOfCoins(response.data.coins)
     })
 
@@ -44,6 +44,8 @@ function App() {
               icon={coin.icon} 
               price={coin.price} 
               symbol={coin.symbol}
+              link={coin.websiteUrl}
+              priceChangedLastday={coin.priceChange1d}
             />
           )
         })}
